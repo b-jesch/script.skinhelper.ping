@@ -6,13 +6,15 @@ Informationen für Skinner / Informations for skinners
 
 <b>Benutzung / Usage</b>
 
-Startet das Addon und setzt den Status der Server in den Eigenschaften des Home-Windows / Runs the addon and store the state of the servers into the properties of the home window:
+Startet das Addon und setzt den Status der Server in den Eigenschaften des Home-Windows / Runs the addon and store the 
+state of the servers into the properties of the home window:
+
+	<onclick>RunScript(script.skinhelper.ping,status)</onclick>
+	
+Öffnet ein Menü, in dem der Status der Server angezeigt wird. Server können aus diesem Menü heraus per WOL 
+geweckt werden / Opens a menu with the state of all servers. Servers can woked up by sending a WOL-Packet.
 
 	<onclick>RunScript(script.skinhelper.ping)</onclick>
-	
-Öffnet ein Menü, in dem der Status der Server angezeigt wird. Server können aus diesem Menü heraus per WOL geweckt werden / Opens a menu with the state of all servers. Servers can woked up by sending a WOL-Packet.
-
-	<onclick>RunScript(script.skinhelper.ping,menu)</onclick>
 	
 <b>Properties</b>
 
@@ -24,7 +26,8 @@ Online-Status Server 1 - 5 / Online state of servers 1 - 5:
     $INFO[Window(Home).Property(SkinHelperPING.server4)]
     $INFO[Window(Home).Property(SkinHelperPING.server5)]
     
-Name der Server 1 - 5. Der Name ist beliebig wählbar und muss nicht der Name des Servers im Netzwerk sein / Server names 1 - 5. The name can be chosen as desired and does not match the name of the server in the network:
+Name der Server 1 - 5. Der Name ist beliebig wählbar und muss nicht der Name des Servers im Netzwerk sein / Server 
+names 1 - 5. The name can be chosen as desired and does not match the name of the server in the network:
 	
     $INFO[Window(Home).Property(SkinHelperPING.servername1)]
     $INFO[Window(Home).Property(SkinHelperPING.servername2)]
@@ -80,7 +83,10 @@ Addon ausführen, das Addon wird dabei bei jedem Aufruf des Hauptmenüs gestarte
 		.
 ```
 	
-Darstellung per Button, zusätzlich wird ein Label integriert. Die Grafik für den Button 'ServerIcon.png' kann muss aus dem 'resources/media'-Verzeichnis des Addons in das 'media'-Verzeichnis des verwendeten Skins kopiert werden. / Presentation via button and an additional label. The icon bitmap 'ServerIcon.png' within the 'resources/media' folder of the addon must copied into the 'media' folder of the used skin. 
+Darstellung per Button, zusätzlich wird ein Label integriert. Die Grafik für den Button 'ServerIcon.png' kann 
+aus dem 'resources/media'-Verzeichnis des Addons in das 'media'-Verzeichnis des verwendeten Skins kopiert 
+werden. / Presentation via button and an additional label. The icon bitmap 'ServerIcon.png' within the 
+'resources/media' folder of the addon must copied into the 'media' folder of the used skin. 
 
 ```
 	<control type="button">
