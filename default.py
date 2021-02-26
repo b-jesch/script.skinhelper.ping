@@ -82,7 +82,7 @@ if __name__ == '__main__':
         host_list = list()
         for host_nr in range(0, 5):
             if hosts.host[host_nr][0] == '': continue
-            liz = xbmcgui.ListItem(label=hosts.host[host_nr][2], label2=hosts.host[host_nr][c0])
+            liz = xbmcgui.ListItem(label=hosts.host[host_nr][2], label2=hosts.host[host_nr][0])
             liz.setProperty('mac', hosts.host[host_nr][1])
             liz.setArt({'icon': hosts.host[host_nr][3]})
             host_list.append(liz)
