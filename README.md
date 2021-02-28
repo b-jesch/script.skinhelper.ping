@@ -18,7 +18,9 @@ Sendet ein WOL Paket an den Server 1 - 5 / Send a WOL magic packet to the server
 wobei &lt;n&gt; die Nummer des zu weckenden Servers ist. / where &lt;n&gt; is the number of the server that has to woke up. 
 	
 Öffnet ein Menü, in dem der Status der Server angezeigt wird. Server können aus diesem Menü heraus per WOL 
-geweckt werden / Opens a menu with the state of all servers. Servers can woked up by sending a WOL-Packet.
+geweckt werden. Das ist auch das normale Verhalten, wenn das Addon über das Addon Menü, Programme, gestartet wird. / Opens 
+a menu with the state of all servers. Servers can woked up by sending a WOL-Packet. This is also the normal behaviour when 
+starting an addon via addon menu, programs.
 
 	<onclick>RunScript(script.skinhelper.ping)</onclick>
 	
