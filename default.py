@@ -47,7 +47,7 @@ class Hosts:
         for host_nr in range(0, 5):
             self.host.append([__addon__.getSetting('ip{}'.format(host_nr + 1)),
                                 __addon__.getSetting('mac{}'.format(host_nr + 1)),
-                                __addon__.getSetting('name{}'.format(host_nr+ 1)),
+                                __addon__.getSetting('name{}'.format(host_nr + 1)),
                                 icon_off])
 
             if self.host[host_nr][0] != '':
@@ -77,6 +77,7 @@ if __name__ == '__main__':
             exit(0)
         elif param[0:3] == "wol":
             host_nr = int(param[-1:]) - 1
+            xbmc.log('Send WOL packet to {} (MAC {})'.format(hosts.host[host_nr][2], hosts.host[host_nr][1]), xbmc.LOGINFO)
             wol(hosts.host[host_nr][1])
         else:
             xbmc.log('Wrong parameter: {}'.format(param), xbmc.LOGERROR)
