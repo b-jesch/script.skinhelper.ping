@@ -10,6 +10,12 @@ Startet das Addon und setzt den Status der Server in den Eigenschaften des Home-
 state of the servers into the properties of the home window:
 
 	<onclick>RunScript(script.skinhelper.ping,status)</onclick>
+
+Sendet ein WOL Paket an den Server 1 - 5 / Send a WOL magic packet to the server 1- 5:
+
+    <onclick>RunScript(script,skinhelper.ping,wol<n>)</onclick> 
+
+wobei <n> die Nummer des zu weckenden Servers ist. / where <n> is the number of the server that has to woke up. 
 	
 Öffnet ein Menü, in dem der Status der Server angezeigt wird. Server können aus diesem Menü heraus per WOL 
 geweckt werden / Opens a menu with the state of all servers. Servers can woked up by sending a WOL-Packet.

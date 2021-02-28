@@ -75,6 +75,9 @@ if __name__ == '__main__':
         param = sys.argv[1]
         if param == "status":
             exit(0)
+        elif param[0:3] == "wol":
+            host_nr = int(param[-1:]) - 1
+            wol(hosts.host[host_nr][1])
         else:
             xbmc.log('Wrong parameter: {}'.format(param), xbmc.LOGERROR)
 
