@@ -1,4 +1,4 @@
-Skinhelper PING
+Skinhelper PING / Skinhelper Ping Service
 ===============
 
 Informationen für Skinner / Informations for skinners
@@ -24,7 +24,7 @@ starting an addon via addon menu, programs.
 
 	<onclick>RunScript(script.skinhelper.ping)</onclick>
 
-Zusätzlich kann das Addon auch als Dienst getartet werden (default: off). In diesem Modus aktualisiert das Addon alle 10 
+Zusätzlich kann das Addon auch als Dienst gestartet werden (default: off). In diesem Modus aktualisiert das Addon alle 10 
 Sekunden den Status der eingetragenen Server. / In addition, the addon can also be started as a service (default: off). 
 In this mode, the add-on updates the status of the registered servers every 10 seconds.
 
